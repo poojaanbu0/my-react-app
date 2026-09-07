@@ -1,21 +1,22 @@
 import { StrictMode } from 'react'
 import { useState,useEffect } from 'react';
 import { createRoot } from 'react-dom/client'
+import {BrowserRouter} from 'react-router-dom';
 import './index.css'
-import useFetch from './useFetch';
-import Header from './Class.jsx'
-import App from './Event.jsx'
-import MyCar from './MyCar_hook.jsx';
-import Timer from './Time_hook.jsx'
-import Counter from './Use_State.jsx';
-import Toggle from './Toggle.jsx';
-import Count from './Count.jsx';
-import Component1 from './Context.jsx';
-import Focus from './Ref.jsx';
-import CallbackExample from './Callback.jsx';
-import Memo from './Memo.jsx';
-import Mylist from './Map.jsx';
-import Form from './Forms.jsx';
+// import useFetch from './useFetch';
+// import Header from './Class.jsx'
+// import App from './Event.jsx'
+// import MyCar from './MyCar_hook.jsx';
+// import Timer from './Time_hook.jsx'
+// import Counter from './Use_State.jsx';
+// import Toggle from './Toggle.jsx';
+// import Count from './Count.jsx';
+// import Component1 from './Context.jsx';
+// import Focus from './Ref.jsx';
+// import CallbackExample from './Callback.jsx';
+// import Memo from './Memo.jsx';
+// import Mylist from './Map.jsx';
+// import Form from './Forms.jsx';
 import Ap from './App.jsx';
 
 
@@ -40,24 +41,24 @@ import Ap from './App.jsx';
 //   );
 // };
 
-function Counte() {
+// function Counte() {
 
-    const [count, setCount] = useState(0);
+//     const [count, setCount] = useState(0);
 
-    useEffect(() => {
-        console.log("Count changed:", count);
-    }, [count]);
+//     useEffect(() => {
+//         console.log("Count changed:", count);
+//     }, [count]);
 
-    return (
-        <>
-            <h1>{count}</h1>
+//     return (
+//         <>
+//             <h1>{count}</h1>
 
-            <button onClick={() => setCount(count + 1)}>
-                Increase
-            </button>
-        </>
-    );
-}
+//             <button onClick={() => setCount(count + 1)}>
+//                 Increase
+//             </button>
+//         </>
+//     );
+// }
 
 createRoot(document.getElementById('root')).render(
     <>
@@ -75,6 +76,10 @@ createRoot(document.getElementById('root')).render(
     <CallbackExample />
     <Memo />
     <Form/> */}
+    <BrowserRouter>
     <Ap/>
+    </BrowserRouter>
+    
+
     </>
 );
