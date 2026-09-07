@@ -15,6 +15,9 @@ import Focus from './Ref.jsx';
 import CallbackExample from './Callback.jsx';
 import Memo from './Memo.jsx';
 import Mylist from './Map.jsx';
+import Form from './Forms.jsx';
+import Ap from './App.jsx';
+
 
 // const Home = () => {
 //     const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
@@ -62,7 +65,7 @@ createRoot(document.getElementById('root')).render(
     <Header/>
     <MyCar /> */}
       
-    <Mylist /> 
+    {/* <Mylist /> 
     <Timer />
     <Counter />
     <Toggle />
@@ -71,5 +74,7 @@ createRoot(document.getElementById('root')).render(
     <Focus />
     <CallbackExample />
     <Memo />
+    <Form/> */}
+    <Ap/>
     </>
 );
