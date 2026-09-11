@@ -18,6 +18,7 @@ import './index.css'
 // import Mylist from './Map.jsx';
 // import Form from './Forms.jsx';
 import Ap from './App.jsx';
+import CallbackExample from './Callback.jsx';
 
 
 // const Home = () => {
@@ -78,6 +79,7 @@ createRoot(document.getElementById('root')).render(
     <Form/> */}
     <BrowserRouter>
     <Ap/>
+    <CallbackExample/>
     </BrowserRouter>
     
 

@@ -1,9 +1,10 @@
 //Without useCallback:
 import React, { useState , useCallback} from 'react';
 import { createRoot } from 'react-dom/client';
+import {memo} from 'react';
 
 // Child component that receives a function prop
-const Button = React.memo(({ onClick, text }) => {
+const Button = memo(({ onClick, text }) => {
   console.log(`Child ${text} rendered`);
   return <button onClick={onClick}>{text}</button>;
 });
