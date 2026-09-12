@@ -19,6 +19,8 @@ import './index.css'
 // import Form from './Forms.jsx';
 import Ap from './App.jsx';
 import CallbackExample from './Callback.jsx';
+import App from './App.jsx';
+import './MyStyle.scss';
 
 
 // const Home = () => {
@@ -61,6 +63,15 @@ import CallbackExample from './Callback.jsx';
 //     );
 // }
 
+function MyHeader(){
+    return(
+        <div>
+            <h1>Myheader1</h1>
+            <h2>myheader2</h2>
+            <h3>myheader3</h3>
+        </div>
+    );
+}
 createRoot(document.getElementById('root')).render(
     <>
     {/* <App/>
@@ -77,11 +88,13 @@ createRoot(document.getElementById('root')).render(
     <CallbackExample />
     <Memo />
     <Form/> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Ap/>
     <CallbackExample/>
-    </BrowserRouter>
-    
+    <App/>
+    </BrowserRouter> */}
+    <MyHeader/>
+    <App/>
 
     </>
 );
