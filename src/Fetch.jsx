@@ -40,3 +40,8 @@ function App(){
         </>
     );
 }
+
+// API requests
+// database/backend requests
+// file operations
+// async functions

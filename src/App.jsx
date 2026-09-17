@@ -17,10 +17,16 @@
 
 // export default Ap;
 
-import WebSocketDemo from "./Websocket.jsx";
+import ErrorBoundary from "./errorboundary.jsx";
+
+import UserProfile from "./userprofile.jsx";
 
 function App() {
-  return <WebSocketDemo />;
+  return (
+    <ErrorBoundary>
+      <UserProfile />
+    </ErrorBoundary>
+  );
 }
 
 export default App;
